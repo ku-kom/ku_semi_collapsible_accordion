@@ -1,0 +1,20 @@
+{
+    "name": "university-of-copenhagen/ku-semi-collapsible-accordion",
+    "type": "typo3-cms-extension",
+    "description": "Semi collapsible Bootstrap accordion.",
+    "homepage": "https://www.ku.dk/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "UniversityOfCopenhagen\\KuSemiCollapsibleAccordion\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ku_semi_collapsible_accordion"
+        }
+    }
+}

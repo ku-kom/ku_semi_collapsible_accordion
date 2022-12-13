@@ -1,0 +1,13 @@
+{
+    "name": "ku_semi_collapsible_accordion",
+    "version": "1.0.0",
+    "description": "Semi collapsible Bootstrap accordion.",
+    "keywords": [
+        "TYPO3",
+        "Bootstrap",
+        "PHP",
+        "JavaScript"
+    ],
+    "author": "Nanna Ellegaard",
+    "license": "ISC"
+}

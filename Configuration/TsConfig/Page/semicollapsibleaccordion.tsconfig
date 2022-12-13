@@ -1,0 +1,16 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        semicollapsibleaccordion {
+            iconIdentifier = ku-semi-collapse-icon
+            title = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/Backend.xlf:content_element.semi_collapse_accordion
+            description = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/Backend.xlf:semi_collapse_accordion_desc
+            tt_content_defValues {
+                CType = semicollapsibleaccordion
+            }
+        }
+    }
+    show := addToList(semicollapsibleaccordion)
+}
