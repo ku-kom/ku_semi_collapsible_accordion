@@ -18,7 +18,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion']
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ku_semi_collapsible_accordion',
     'Configuration/TsConfig/Page/semicollapsibleaccordion.tsconfig',
-    'Semi collapsed Bootstrap accordion'
+    'KU Content Element: Semi collapsible accordion'
 );
 
 // Add content element to selector list
@@ -26,15 +26,15 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion']
     'tt_content',
     'CType',
     [
-        'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion',
+        'KU semi collapse accordion',
         'semicollapsibleaccordion',
-        'ku-semi-collapse-icon',
+        'content-bootstrappackage-accordion',
         'ku_semi_collapsible_accordion'
     ]
 );
 
 // Assign Icon
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['semicollapsibleaccordion'] = 'ku-semi-collapse-icon';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['semicollapsibleaccordion'] = 'content-bootstrappackage-accordion';
 
 // Configure element type
 $GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion'] = array_replace_recursive(
