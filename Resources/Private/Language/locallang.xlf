@@ -7,7 +7,7 @@
         </header>
         <body>
         <trans-unit id="content_element.semi_collapse_accordion">
-            <source>Semi collapsed accordion</source>
+            <source>KU semi collapsed accordion</source>
         </trans-unit>
         <trans-unit id="content_element.semi_collapse_accordion_desc">
             <source>Insert several semicollapsed accordions</source>

@@ -18,7 +18,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accord
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ku_semi_collapsible_accordion',
     'Configuration/TsConfig/Page/ku_semi_collapsible_accordion.tsconfig',
-    'KU Content Element: Semi collapsible accordion'
+    'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion'
 );
 
 // Add content element to selector list
@@ -26,7 +26,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accord
     'tt_content',
     'CType',
     [
-        'KU semi collapse accordion',
+        'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion',
         'ku_semi_collapsible_accordion',
         'content-bootstrappackage-accordion',
         'ku_semi_collapsible_accordion'
