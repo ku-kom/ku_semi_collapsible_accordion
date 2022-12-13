@@ -1,17 +1,8 @@
-TYPO3 extension "KU Save close button"
+TYPO3 extension Bootstrap button group
 ==============================================================
 
-## "Save and close" button
-Add "Save and close" button to TYPO3 backend content editing.
-
-## What does it do?
-
-Adds "Save and close" button besides the "Save" button in all content elements.
-
-## How to install
-
-Zero configuration. Just install and activate.
+Based on https://github.com/linawolf/lwo_bootstrap_buttons
 
 ## Developed for
 
-TYPO3 v. 11.5
+TYPO3 v. 11.5, PHP 8.1
