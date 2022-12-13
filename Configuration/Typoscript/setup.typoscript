@@ -2,19 +2,19 @@
 #### CTYPE: KU SEMI COLLAPSIBLE ACCORDION ####
 ##############################################
 
-tt_content.semicollapsibleaccordion >
-tt_content.semicollapsibleaccordion =< lib.contentElement
-tt_content.semicollapsibleaccordion {
+tt_content.ku_semi_collapsible_accordion >
+tt_content.ku_semi_collapsible_accordion =< lib.contentElement
+tt_content.ku_semi_collapsible_accordion {
 
     ################
     ### TEMPLATE ###
     ################
     templateName = SemiCollapsibleAccordion
     templateRootPaths {
-        0 = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/ContentElements/
+        10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/ContentElements/
     }
 	partialRootPaths {
-		0 = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/ContentElements/
+		10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/ContentElements/
 	}
 
 
@@ -49,7 +49,7 @@ tt_content.semicollapsibleaccordion {
 ### RESPONSIVE IMAGES ###
 #########################
 lib.contentElement.settings.responsiveimages.contentelements {
-    semicollapsibleaccordion {
+    ku_semi_collapsible_accordion {
         left {
             multiplier {
                 default = 0.5

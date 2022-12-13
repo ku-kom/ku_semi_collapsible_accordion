@@ -15,6 +15,6 @@ call_user_func(function()
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
-        'Semi collapsed Bootstrap accordion'
+        'KU Semi collapsed Bootstrap accordion'
     );
 });

@@ -3,14 +3,14 @@
 ####################################
 mod.wizards.newContentElement.wizardItems.interactive {
     elements {
-        semicollapsibleaccordion {
+        ku_semi_collapsible_accordion {
             iconIdentifier = ku-semi-collapse-icon
-            title = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/Backend.xlf:content_element.semi_collapse_accordion
-            description = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/Backend.xlf:semi_collapse_accordion_desc
+            title = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion
+            description = LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_desc
             tt_content_defValues {
-                CType = semicollapsibleaccordion
+                CType = ku_semi_collapsible_accordion
             }
         }
     }
-    show := addToList(semicollapsibleaccordion)
+    show := addToList(ku_semi_collapsible_accordion)
 }

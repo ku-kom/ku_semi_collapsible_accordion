@@ -10,14 +10,14 @@
 defined('TYPO3') or die('Access denied.');
 
 // Add Content Element
-if (!is_array($GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion'] ?? false)) {
-    $GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion'] = [];
+if (!is_array($GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'] ?? false)) {
+    $GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'] = [];
 }
 
 // Add content element PageTSConfig
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ku_semi_collapsible_accordion',
-    'Configuration/TsConfig/Page/semicollapsibleaccordion.tsconfig',
+    'Configuration/TsConfig/Page/ku_semi_collapsible_accordion.tsconfig',
     'KU Content Element: Semi collapsible accordion'
 );
 
@@ -27,18 +27,18 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion']
     'CType',
     [
         'KU semi collapse accordion',
-        'semicollapsibleaccordion',
+        'ku_semi_collapsible_accordion',
         'content-bootstrappackage-accordion',
         'ku_semi_collapsible_accordion'
     ]
 );
 
 // Assign Icon
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['semicollapsibleaccordion'] = 'content-bootstrappackage-accordion';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ku_semi_collapsible_accordion'] = 'content-bootstrappackage-accordion';
 
 // Configure element type
-$GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion'] = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['types']['semicollapsibleaccordion'],
+$GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'] = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'],
     [
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
@@ -96,5 +96,5 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:ku_semi_collapsible_accordion/Configuration/FlexForms/SemiCollapsibleAccordion.xml',
-    'semicollapsibleaccordion'
+    'ku_semi_collapsible_accordion'
 );
