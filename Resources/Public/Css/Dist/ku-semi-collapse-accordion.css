@@ -24,9 +24,9 @@
     --semicollapse-accordion-btn: #c73028;
     --semicollapse-accordion-btn-hover: #9d261f;
     --semicollapse-accordion-btn-border: #b22b24;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 2px;
     color: var(--bs-white);
     background-color: var(--semicollapse-accordion-btn);
@@ -37,21 +37,28 @@
     position: relative;
 }
 
-.semi-collapsible-button:hover {
-    background-color: var(--semicollapse-accordion-btn-hover);
+.semi-collapsible-button:hover,
+.semi-collapsible-button:focus,
+.semi-collapsible-button:active {
+    background-color: var(--semicollapse-accordion-btn-hover)!important;
+    color: var(--bs-white)!important;
+}
+
+.semi-collapsible-button:focus {
+    border-color: #48110e!important;
 }
 
 .semi-collapsible-button::before {
     position: relative;
-    top: 1px;
     display: inline-block;
-    content: "";
-    height: 16px;
-    width: 16px;
-    vertical-align: -.125em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
+    content: "\002B";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.semi-collapsible-button[aria-expanded=true]::before {
+    content: "\2212";
 }
 
 .semi-collapse-accordion-collapse.collapsing {
@@ -78,4 +85,9 @@
 
 .semi-collapse-accordion-collapse.collapse.show::after {
     display: none;
+}
+
+/* Image positioning */
+.semi-collapsible-media.textpic-bottom .accordion-content-media-item {
+    order: 2;
 }
