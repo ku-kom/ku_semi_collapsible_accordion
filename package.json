@@ -2,6 +2,13 @@
     "name": "ku_semi_collapsible_accordion",
     "version": "1.0.0",
     "description": "Semi collapsible Bootstrap accordion.",
+    "scripts": {
+		"concat:css": "globcat \"Resources/Public/Css/Src/**/*.css\" --output \"Resources/Public/Css/Dist/ku-semi-collapse-accordion.css\"",
+		"minify:css": "postcss \"Resources/Public/Css/Dist/ku-semi-collapse-accordion.css\" --config Build/postcss.config.js \"Resources/Public/Css/Dist/*.css\" \"!Resources/Public/Css/Dist/*.min.css\" --output \"Resources/Public/Css/Dist/ku-semi-collapse-accordion.min.css\"",
+		"build:css": "npm-run-all concat:css && npm-run-all minify:css",
+		"watch:css": "onchange \"Resources/Public/Css/Src/*.css\" -- npm-run-all build:css",
+		"watch": "npm-run-all --parallel watch:*"
+	},
     "keywords": [
         "TYPO3",
         "Bootstrap",
@@ -9,5 +16,15 @@
         "JavaScript"
     ],
     "author": "Nanna Ellegaard",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.18",
+		"postcss-cli": "^10.0.0",
+		"cssnano": "^5.1.14",
+		"globcat": "^2.0.1",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"terser": "^5.15.1"
+	}
 }

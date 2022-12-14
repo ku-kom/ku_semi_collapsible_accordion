@@ -16,7 +16,7 @@ CREATE TABLE tx_ku_semi_collapsible_accordion_item (
     header varchar(255) DEFAULT '' NOT NULL,
     bodytext text,
     media int(11) unsigned DEFAULT '0',
-    mediaorient varchar(60) DEFAULT 'left' NOT NULL,
+    mediaorient varchar(60) DEFAULT '' NOT NULL,
     imagecols tinyint(4) unsigned DEFAULT '1' NOT NULL,
     image_zoom tinyint(3) unsigned DEFAULT '0' NOT NULL,
 );

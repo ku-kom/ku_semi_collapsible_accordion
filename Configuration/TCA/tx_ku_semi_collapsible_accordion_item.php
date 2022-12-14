@@ -237,6 +237,10 @@ return [
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
+                        'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_img_orient',
+                        ''
+                    ],
+                    [
                         'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaorient.left',
                         'left'
                     ],
@@ -253,7 +257,6 @@ return [
                         'bottom'
                     ],
                 ],
-                'default' => 'left',
             ],
             'l10n_mode' => 'exclude'
         ],

@@ -12,6 +12,12 @@
         <trans-unit id="content_element.semi_collapse_accordion_desc">
             <source>Insert several semicollapsed accordions</source>
         </trans-unit>
+         <trans-unit id="content_element.semi_collapse_accordion_img_orient">
+            <source>Select media position</source>
+        </trans-unit>
+        <trans-unit id="content_element.semi_collapse_accordion_btn">
+            <source>Open or close accordion</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
