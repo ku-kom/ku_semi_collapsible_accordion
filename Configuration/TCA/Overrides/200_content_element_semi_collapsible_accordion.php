@@ -69,7 +69,7 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['columns'],
     [
         'tx_ku_semi_collapsible_accordion_item' => [
-            'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item',
+            'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_item',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_ku_semi_collapsible_accordion_item',

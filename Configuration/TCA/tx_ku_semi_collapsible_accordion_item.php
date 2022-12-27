@@ -15,7 +15,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item',
+        'title' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_item',
         'delete' => 'deleted',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
