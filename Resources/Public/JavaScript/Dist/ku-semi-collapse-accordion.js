@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
             let accordionExists = window.location.hash.indexOf('accordion-') >= 0;
             if (accordionExists) {
                 let accordionID = window.location.hash;
-                console.log(accordionID);
                 // Open accordion
                 const bsCollapse = new bootstrap.Collapse(accordionID, {
                     show: true
