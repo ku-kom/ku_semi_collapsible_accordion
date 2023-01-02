@@ -2,14 +2,13 @@
 <f:layout name="Default" />
 <f:section name="Main">
     
-    <f:variable name="collapseHeight" value="{data.pi_flexform.settings.accordion_height}" />
     <f:if condition="{records}">
-        <f:variable name="activeElement" value="{data.pi_flexform.default_element}px" />
+        <f:variable name="activeElement" value="{data.pi_flexform.default_element}" />
         <f:variable name="currentVariants" value="{variants}" />
         <div class="semi-collapsible-list" id="accordion-{data.uid}">
             <f:for each="{records}" as="record" iteration="iteration">
                 <div class="semi-collapse-item">
-                    <div id="accordion-{data.uid}-{record.data.uid}" class="semi-collapse-accordion-collapse collapse{f:if(condition: '{activeElement} == {record.data.uid}', then: ' show')}" aria-labelledby="accordion-heading-{data.uid}-{record.data.uid}" data-parent="#accordion-{data.uid}">
+                    <div id="accordion-{data.uid}-{record.data.uid}" class="semi-collapse-accordion-collapse collapse{f:if(condition: '{activeElement} == {record.data.uid}', then: ' show')} {record.data.accordion_item_height}" aria-labelledby="accordion-heading-{data.uid}-{record.data.uid}" data-parent="#accordion-{data.uid}">
                         <div class="semi-collapsible-body">
                             <h3 class="semi-collapsible-header" id="accordion-heading-{data.uid}-{record.data.uid}">{record.data.header}</h3>
                             <div class="semi-collapsible-media textpic textpic-{record.data.mediaorient}">
@@ -34,11 +33,6 @@
 </f:section>
 <f:section name="HeaderAssets">
     <link rel="stylesheet" href="{f:uri.resource(path: 'Css/Dist/ku-semi-collapse-accordion.min.css', extensionName: 'ku_semi_collapsible_accordion')}" media="all" />
-    <style>
-    :root {
-        --semicollapse-accordion-height: {collapseHeight};
-    }
-    </style>
 </f:section>
 
 </html>

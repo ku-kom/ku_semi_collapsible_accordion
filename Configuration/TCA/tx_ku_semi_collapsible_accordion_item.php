@@ -41,7 +41,7 @@ return [
                 header,
                 bodytext,
                 media,
-                --palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaposition;mediaposition,
+                --palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaposition;mediaposition,accordion_item_height,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
@@ -180,6 +180,20 @@ return [
                 'rows' => '15',
                 'softref' => 'typolink_tag,email[subst],url',
                 'enableRichtext' => true
+            ],
+        ],
+        'accordion_item_height' => [
+            'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_item_height',
+            'description' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_item_height_desc',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['Default', ''],
+                    ['200 px', 'height-200'],
+                    ['300 px', 'height-300'],
+                    ['400 px', 'height-400'],
+                ]
             ],
         ],
         'media' => [

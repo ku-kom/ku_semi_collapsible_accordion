@@ -24,6 +24,9 @@
         <trans-unit id="content_element.semi_collapse_accordion_item_height">
             <source>Semi collapse height in px</source>
         </trans-unit>
+        <trans-unit id="content_element.semi_collapse_accordion_item_height_desc">
+            <source>Only change if strictly necessary</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

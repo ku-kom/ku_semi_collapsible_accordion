@@ -29,30 +29,6 @@
                             </config>
                         </TCEforms>
                     </default_element>
-                    <settings.accordion_height>
-                        <TCEforms>
-                            <label>LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_item_height
-                            </label>
-                            <config>
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <items>
-                                    <numIndex index="0">
-                                        <numIndex index="0">Default</numIndex>
-                                        <numIndex index="1"></numIndex>
-                                    </numIndex>
-                                    <numIndex index="1">
-                                        <numIndex index="0">200 px</numIndex>
-                                        <numIndex index="1">200</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2">
-                                        <numIndex index="0">300 px</numIndex>
-                                        <numIndex index="1">300</numIndex>
-                                    </numIndex>
-                                </items>
-                            </config>
-                        </TCEforms>
-                    </settings.accordion_height>
                 </el>
             </ROOT>
         </sDEF>
