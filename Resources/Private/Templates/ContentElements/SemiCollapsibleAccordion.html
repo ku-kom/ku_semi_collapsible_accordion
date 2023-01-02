@@ -1,7 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
-    
     <f:if condition="{records}">
         <f:variable name="activeElement" value="{data.pi_flexform.default_element}" />
         <f:variable name="currentVariants" value="{variants}" />
@@ -25,7 +24,8 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn semi-collapsible-button{f:if(condition: '{activeElement} == {record.data.uid}', else:' collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{data.uid}-{record.data.uid}" data-bs-parent="#accordion-{data.uid}" aria-expanded="{f:if(condition: '{activeElement} == {record.data.uid}', then: 'true', else: 'false')}" aria-controls="accordion-{data.uid}-{record.data.uid}"><span class="visually-hidden"><f:translate key="LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_btn" /></span></button>
+                    <button class="btn semi-collapsible-button{f:if(condition: '{activeElement} == {record.data.uid}', else:' collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{data.uid}-{record.data.uid}" data-bs-parent="#accordion-{data.uid}" aria-expanded="{f:if(condition: '{activeElement} == {record.data.uid}', then: 'true', else: 'false')}" aria-controls="accordion-{data.uid}-{record.data.uid}"><span class="visually-hidden">
+                            <f:translate key="LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_btn" /></span></button>
                 </div>
             </f:for>
         </div>
@@ -33,6 +33,9 @@
 </f:section>
 <f:section name="HeaderAssets">
     <link rel="stylesheet" href="{f:uri.resource(path: 'Css/Dist/ku-semi-collapse-accordion.min.css', extensionName: 'ku_semi_collapsible_accordion')}" media="all" />
+</f:section>
+<f:section name="FooterAssets">
+    <script src="{f:uri.resource(path: 'JavaScript/Dist/ku-semi-collapse-accordion.min.js', extensionName: 'ku_semi_collapsible_accordion')}"></script>
 </f:section>
 
 </html>
