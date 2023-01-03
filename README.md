@@ -1,7 +1,5 @@
-TYPO3 extension Bootstrap button group
+TYPO3 extension Semi collapsible accordions
 ==============================================================
-
-Based on https://github.com/linawolf/lwo_bootstrap_buttons
 
 ## Developed for
 
