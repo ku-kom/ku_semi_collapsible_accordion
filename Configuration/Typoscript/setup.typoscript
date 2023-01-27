@@ -11,11 +11,11 @@ tt_content.ku_semi_collapsible_accordion {
     ################
     templateName = SemiCollapsibleAccordion
     templateRootPaths {
-        10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/ContentElements/
+        10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/
         20 = {$ku_semi_collapsible_accordion.templates.templateRootPath}
     }
 	partialRootPaths {
-		10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/ContentElements/
+		10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/
         20 = {$ku_semi_collapsible_accordion.templates.partialRootPath}
 	}
 
