@@ -20,10 +20,10 @@ class getRecordId
      */
     public function getUid(&$params): void
     {
-        debug($params);
+        //debug($params);
         $pid = $params['row']['pid'];
         $uid = $params['row']['uid'];
         
-        $params['items'][] = ['#accordion-' .$pid . '-' . $uid, '1'];
+        $params['items'][] = ['#accordion-' . $pid . '-' . $uid, '1'];
     }
 }
