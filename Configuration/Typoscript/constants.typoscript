@@ -1,0 +1,14 @@
+ku_semi_collapsible_accordion {
+    templates {
+        # cat=KU semi collapsible accordion/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
+        templateRootPath = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/
+        # cat=KU semi collapsible accordion/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
+        partialRootPath = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/
+    }
+    assets {
+        # cat=KU semi collapsible accordion/Assets/; type=string; label=CSS assets: Path to stylesheet.
+        extraCss = EXT:ku_semi_collapsible_accordion/Resources/Public/Css/Dist/ku-semi-collapse-accordion.min.css
+        # cat=KU semi collapsible accordion/Assets/; type=string; label=JavaScript assets: Path to javaScript file.
+        extraJs = EXT:ku_semi_collapsible_accordion/Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.min.js
+    }
+}

@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="semi-collapse-item">
+    <div id="accordion-{data.uid}-{record.data.uid}" class="semi-collapse-accordion-collapse collapse{f:if(condition: '{activeElement} == {record.data.uid}', then: ' show')} {record.data.accordion_item_height}" aria-labelledby="accordion-heading-{data.uid}-{record.data.uid}" data-parent="#accordion-{data.uid}">
+        <div class="semi-collapsible-body">
+            <h3 class="semi-collapsible-header" id="accordion-heading-{data.uid}-{record.data.uid}">{record.data.header}</h3>
+            <div class="semi-collapsible-media textpic textpic-{record.data.mediaorient}">
+                <f:if condition="{record.files}">
+                    <div class="accordion-content-media-item textpic-item textpic-gallery">
+                        <f:variable name="imageConfig">{settings.responsiveimages.contentelements.accordion.{record.data.mediaorient}}</f:variable>
+                        <bk2k:data.imageVariants as="variants" variants="{currentVariants}" multiplier="{imageConfig.multiplier}" gutters="{imageConfig.gutters}" corrections="{imageConfig.corrections}" />
+                        <f:render partial="Media/Gallery" arguments="{files: record.files, data: record.data, settings: settings, variants: variants}" />
+                    </div>
+                </f:if>
+                <div class="textpic-item textpic-text accordion-content-text">
+                    <f:format.html>{record.data.bodytext}</f:format.html>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn semi-collapsible-button{f:if(condition: '{activeElement} == {record.data.uid}', else:' collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{data.uid}-{record.data.uid}" data-bs-parent="#accordion-{data.uid}" aria-expanded="{f:if(condition: '{activeElement} == {record.data.uid}', then: 'true', else: 'false')}" aria-controls="accordion-{data.uid}-{record.data.uid}"><span class="visually-hidden">{f:translate(key: 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_btn')}</span></button>
+</div>
+
+</html>

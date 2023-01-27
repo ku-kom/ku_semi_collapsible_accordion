@@ -1,0 +1,45 @@
+TCEFORM {
+    tt_content {
+        # cType ku_semi_collapsible_accordion:
+        header_layout {
+           types {
+                ku_semi_collapsible_accordion {
+                    disabled = 1
+                }
+            }
+        }
+
+        header_link {
+           types {
+                ku_semi_collapsible_accordion {
+                    disabled = 1
+                }
+            }
+        }
+
+        subheader {
+           types {
+                ku_semi_collapsible_accordion {
+                    disabled = 1
+                }
+            }
+        }
+
+        header_position {
+           types {
+                ku_semi_collapsible_accordion {
+                    disabled = 1
+                }
+            }
+        }
+
+        date {
+           types {
+                ku_semi_collapsible_accordion {
+                    disabled = 1
+                }
+            }
+        }
+
+    }
+}

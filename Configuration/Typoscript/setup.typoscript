@@ -12,9 +12,11 @@ tt_content.ku_semi_collapsible_accordion {
     templateName = SemiCollapsibleAccordion
     templateRootPaths {
         10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Templates/ContentElements/
+        20 = {$ku_semi_collapsible_accordion.templates.templateRootPath}
     }
 	partialRootPaths {
 		10 = EXT:ku_semi_collapsible_accordion/Resources/Private/Partials/ContentElements/
+        20 = {$ku_semi_collapsible_accordion.templates.partialRootPath}
 	}
 
 
@@ -42,6 +44,24 @@ tt_content.ku_semi_collapsible_accordion {
         }
     }
 
+}
+
+##########################
+#### OPTION TO ADD CSS ###
+##########################
+lib.ku_semi_collapsible_accordion.pagecss = TEXT
+lib.ku_semi_collapsible_accordion.pagecss {
+    if.isTrue = {$ku_semi_collapsible_accordion.assets.extraCss}
+    value = {$ku_semi_collapsible_accordion.assets.extraCss}
+}
+
+##########################
+#### OPTION TO ADD JS ####
+##########################
+lib.ku_semi_collapsible_accordion.pagejs = TEXT
+lib.ku_semi_collapsible_accordion.pagejs {
+    if.isTrue = {$ku_semi_collapsible_accordion.assets.extraJs}
+    value = {$ku_semi_collapsible_accordion.assets.extraJs}
 }
 
 
