@@ -27,6 +27,9 @@
         <trans-unit id="content_element.semi_collapse_accordion_item_height_desc">
             <source>Only change if strictly necessary</source>
         </trans-unit>
+        <trans-unit id="content_element.semi_collapse_accordion_id">
+            <source>Current url to this item</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

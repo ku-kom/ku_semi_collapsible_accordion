@@ -16,6 +16,7 @@ CREATE TABLE tx_ku_semi_collapsible_accordion_item (
     header varchar(255) DEFAULT '' NOT NULL,
     bodytext text,
     accordion_item_height varchar(128) DEFAULT '' NOT NULL,
+    accordion_record_id varchar(128) DEFAULT '' NOT NULL,
     media int(11) unsigned DEFAULT '0',
     mediaorient varchar(60) DEFAULT '' NOT NULL,
     imagecols tinyint(4) unsigned DEFAULT '1' NOT NULL,

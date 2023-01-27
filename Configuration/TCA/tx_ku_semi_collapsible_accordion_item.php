@@ -41,7 +41,7 @@ return [
                 header,
                 bodytext,
                 media,
-                --palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaposition;mediaposition,accordion_item_height,
+                --palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaposition;mediaposition,accordion_item_height,accordion_record_id,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
@@ -194,6 +194,16 @@ return [
                     ['300 px', 'height-300'],
                     ['400 px', 'height-400'],
                 ]
+            ],
+        ],
+
+        'accordion_record_id' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_id',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'itemsProcFunc' => \UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
             ],
         ],
         'media' => [
