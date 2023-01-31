@@ -20,8 +20,7 @@ class getRecordId
      */
     public function getUid(&$params): void
     {
-        //debug($params);
-        $pid = $params['row']['pid'];
+        $pid = $params['row']['tt_content'][0];
         $uid = $params['row']['uid'];
         
         $params['items'][] = ['#accordion-' . $pid . '-' . $uid, '1'];
