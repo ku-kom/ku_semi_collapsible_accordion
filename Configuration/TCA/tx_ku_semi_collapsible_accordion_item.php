@@ -196,15 +196,17 @@ return [
                 ]
             ],
         ],
-
-        // 'accordion_record_id' => [
-        //     'exclude' => true,
-        //     'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_id',
-        //     'config' => [
-        //         'type' => 'input',
-        //         'itemsProcFunc' => \UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
-        //     ],
-        // ],
+        'accordion_record_id' => [
+            'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_id',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    //['', ''],
+                ],
+                'itemsProcFunc' => UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
+            ],
+        ],
         'media' => [
             'exclude' => true,
             'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.media',
