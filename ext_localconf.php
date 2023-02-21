@@ -21,3 +21,10 @@ if ($typo3VersionNumber < 12000000) {
       @import "EXT:ku_semi_collapsible_accordion/Configuration/page.tsconfig"
    ');
 }
+
+
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1676983628] = [
+   'nodeName' => 'accordionReadOnly',
+   'priority' => 40,
+   'class' => \UniversityOfCopenhagen\KuSemiCollapsibleAccordion\Elements\AccordionReadOnlyElement::class,
+];

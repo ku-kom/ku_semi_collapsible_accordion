@@ -199,12 +199,17 @@ return [
         'accordion_record_id' => [
             'label' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_id',
             'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    //['', ''],
+                // 'type' => 'select',
+                // 'renderType' => 'selectSingle',
+                // 'items' => [
+                // ],
+                'type' => 'user',
+                // renderType isregistered in ext_localconf.php
+                'renderType' => 'accordionReadOnly',
+                'parameters' => [
+                    'recordId' => UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
                 ],
-                'itemsProcFunc' => UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
+                //'itemsProcFunc' => UniversityOfCopenhagen\KuSemiCollapsibleAccordion\UserFunctions\getRecordId::class . '->getUid'
             ],
         ],
         'media' => [
