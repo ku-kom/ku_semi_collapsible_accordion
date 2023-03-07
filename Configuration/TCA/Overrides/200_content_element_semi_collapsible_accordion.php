@@ -75,6 +75,7 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
                 'foreign_table' => 'tx_ku_semi_collapsible_accordion_item',
                 'foreign_field' => 'tt_content',
                 'appearance' => [
+                    'newRecordLinkTitle' => 'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.add-item',
                     'useSortable' => true,
                     'showSynchronizationLink' => true,
                     'showAllLocalizationLink' => true,
