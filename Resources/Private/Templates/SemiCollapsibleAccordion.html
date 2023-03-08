@@ -2,7 +2,7 @@
 <f:layout name="Default" />
 <f:section name="Main">
     <f:if condition="{records}">
-        <f:variable name="activeElement" value="{data.pi_flexform.default_element}" />
+        <f:variable name="activeElement" value="{flexFormData.default_element}" />
         <f:variable name="currentVariants" value="{variants}" />
         <div class="semi-collapsible-list" id="accordion-{data.uid}">
             <f:for each="{records}" as="record">
