@@ -7,7 +7,7 @@
 		"minify:css": "postcss \"Resources/Public/Css/Dist/ku-semi-collapse-accordion.css\" --config Build/postcss.config.js \"Resources/Public/Css/Dist/*.css\" \"!Resources/Public/Css/Dist/*.min.css\" --output \"Resources/Public/Css/Dist/ku-semi-collapse-accordion.min.css\"",
 		"concat:js": "globcat \"Resources/Public/JavaScript/Src/**/*.js\" --output \"Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.js\"",
 		"lint:js": "eslint --cache --cache-location .cache/.eslintcache",
-		"minify:js": "terser \"Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.js\" --output \"Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.min.js\" --compress passes=2 --mangle-props --source-map",
+		"minify:js": "terser \"Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.js\" --output \"Resources/Public/JavaScript/Dist/ku-semi-collapse-accordion.min.js\" --format quote_style=1 --compress passes=2 --mangle-props --source-map",
 		"build:js": "npm-run-all lint:js && npm-run-all concat:js && npm-run-all minify:js",
 		"build:css": "npm-run-all concat:css && npm-run-all minify:css",
 		"watch:css": "onchange \"Resources/Public/Css/Src/*.css\" -- npm-run-all build:css",
