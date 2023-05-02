@@ -28,13 +28,13 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accord
     [
         'LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion',
         'ku_semi_collapsible_accordion',
-        'content-bootstrappackage-accordion',
+        'ku-semi-collapse-icon',
         'ku_semi_collapsible_accordion'
     ]
 );
 
 // Assign Icon
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ku_semi_collapsible_accordion'] = 'content-bootstrappackage-accordion';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ku_semi_collapsible_accordion'] = 'ku-semi-collapse-icon';
 
 // Configure element type
 $GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'] = array_replace_recursive(
@@ -45,8 +45,8 @@ $GLOBALS['TCA']['tt_content']['types']['ku_semi_collapsible_accordion'] = array_
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 tx_ku_semi_collapsible_accordion_item,
-            --div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion.options,
-                pi_flexform;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:advanced,
+            --div--;LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_options,
+                pi_flexform;LLL:EXT:ku_semi_collapsible_accordion/Resources/Private/Language/locallang.xlf:content_element.semi_collapse_accordion_advanced,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,

@@ -18,6 +18,12 @@
         <trans-unit id="content_element.semi_collapse_accordion_btn">
             <source>Open or close accordion</source>
         </trans-unit>
+        <trans-unit id="content_element.semi_collapse_accordion_options">
+            <source>Accordion options</source>
+        </trans-unit>
+        <trans-unit id="content_element.semi_collapse_accordion_advanced">
+            <source>Advanced</source>
+        </trans-unit>
         <trans-unit id="content_element.semi_collapse_accordion_item">
             <source>Semi collapsible accordion item</source>
         </trans-unit>
