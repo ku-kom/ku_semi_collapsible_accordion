@@ -53,6 +53,7 @@ lib.ku_semi_collapsible_accordion.pagecss = TEXT
 lib.ku_semi_collapsible_accordion.pagecss {
     if.isTrue = {$ku_semi_collapsible_accordion.assets.extraCss}
     value = {$ku_semi_collapsible_accordion.assets.extraCss}
+    htmlSanitize = 1
 }
 
 ##########################
@@ -62,6 +63,7 @@ lib.ku_semi_collapsible_accordion.pagejs = TEXT
 lib.ku_semi_collapsible_accordion.pagejs {
     if.isTrue = {$ku_semi_collapsible_accordion.assets.extraJs}
     value = {$ku_semi_collapsible_accordion.assets.extraJs}
+    htmlSanitize = 1
 }
 
 
